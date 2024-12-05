@@ -1,0 +1,70 @@
+.outerrect {
+	width: 500px;
+	height: 500px;
+	border: solid;
+	border-width: 3;
+	border-color: black;
+}
+
+.vertdivide {
+	width: 0px;
+	height: 497px;
+	border: solid;
+	border-width: 1;
+	border-color: black;
+	position:absolute;
+	left: 260px;
+	top:10px;
+}
+
+.horizdivide {
+	width: 497px;
+	height: 0px;
+	border: solid;
+	border-width: 1;
+	border-color: black;
+	position:absolute;
+	top: 250px;
+}
+
+.innerrect {
+	width:250px;
+	background-color: blue;
+	/*opacity: 0;*/
+	display: none;
+}
+
+#topleft {
+	/*display:block;*/
+	/*opacity: 1;*/
+	height:240px;
+	left:1px;
+	top:1px;
+}
+
+#topright {
+	/*display:block;*/
+	/*opacity: 1;*/
+	height:240px;
+	position:absolute;
+	top:11px;
+	left:264px;
+}
+
+#bottomright {
+	/*display:block;*/
+	/*opacity: 1;*/
+	height:260px;
+	position:absolute;
+	top:254px;
+	left:264px;
+}
+
+#bottomleft {
+	/*	display:block;*/
+	/*opacity: 1;*/
+	height:260px;
+	position:absolute;
+	top:254px;
+	left:11px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="outerrect" onclick="checkLocation(event)">
+
+		<div class="innerrect" id="topleft"></div>
+		<div class="innerrect" id="topright"></div>
+		<div class="innerrect" id="bottomleft"></div>
+		<div class="innerrect" id="bottomright"></div>
+
+		<div class="vertdivide"></div>
+		<div class="horizdivide"></div>
+
+	</div>
+
+	<script>
+function checkLocation(event) {
+    // Get the clicked location's coordinates
+    const x = event.offsetX;
+    const y = event.offsetY;
+
+    // Determine which quadrant was clicked based on x and y
+    let clickedId = "";
+    if (x < 250 && y < 250) {
+        clickedId = "topleft";
+    } else if (x >= 250 && y < 250) {
+        clickedId = "topright";
+    } else if (x < 250 && y >= 250) {
+        clickedId = "bottomleft";
+    } else {
+        clickedId = "bottomright";
+    }
+
+    // Toggle the display of the respective innerrect
+    const square = document.getElementById(clickedId);
+    if (square.style.display === "none" || square.style.display === "") {
+        square.style.display = "block"; // Show the square
+    } else {
+        square.style.display = "none"; // Hide the square
+    }
+}
+	</script>
+</body>

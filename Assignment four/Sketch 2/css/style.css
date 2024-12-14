@@ -1,0 +1,29 @@
+
+h1{
+	font-family: cursive; 
+	color: #020035;
+	margin-left: 10%;
+}
+
+h2{
+	font-family: cursive; 
+	color: #1B43BA;
+	margin-left: 13%;
+}
+
+h3{
+	font-family: cursive;
+	margin-right: 55%;
+	text-align: center;
+	font-size: 15px;
+}
+
+h4 {
+	font-family: cursive; 
+	color: #0504AA;
+	border-color: black;
+	background-color: #87CEFA;
+	margin-right: 65%;
+	margin-left: 13%;
+
+}
